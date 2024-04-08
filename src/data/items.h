@@ -11019,6 +11019,20 @@ const struct Item gItemsInfo[] =
         .secondaryId = SUPER_ROD,
     },
 
+     [ITEM_REPELLANT] =
+    {
+        .name = _("Repellant"),
+        .price = 0,
+       .description = COMPOUND_STRING(
+            "Repels weak wild\n"
+            "Pokémon for unlimited\n"
+            "steps."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_FIELD,
+        .fieldUseFunc = ItemUseOutOfBattle_Repel,
+    },
+
     [ITEM_DOWSING_MACHINE] =
     {
         .name = _("Dowsing MCHN"),
