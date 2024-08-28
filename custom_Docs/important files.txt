@@ -1,0 +1,3 @@
+src/data/trainers.h
+src/data/trainer_parties.h
+src/data/pokemon
